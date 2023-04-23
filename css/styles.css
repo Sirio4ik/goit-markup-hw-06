@@ -702,8 +702,20 @@ img {
   margin-left: auto;
   display: flex;
 }
+
+.modal-close-btn:hover {
+  background: #404bbf;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn + .close-btn-vector:hover {
+  color: #ffffff;
+}
 .close-btn-vector {
   fill: #2e2f42;
+  outline: transparent;
 }
 
 .is-hidden {
@@ -778,6 +790,27 @@ img {
 
   margin-left: 95px;
 }
+
+.modal-btn:hover {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:focus {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .input-text {
   display: inline-block;
   font-size: 12px;
