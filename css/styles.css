@@ -705,16 +705,16 @@ img {
 
 .modal-close-btn:hover {
   background: #404bbf;
-  transition-property: background;
+  transition-property: background, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn + .close-btn-vector:hover {
-  color: #ffffff;
+.close-btn-vector:hover {
+  fill: #ffffff;
 }
 .close-btn-vector {
-  fill: #2e2f42;
+  color: #2e2f42;
   outline: transparent;
 }
 
@@ -873,10 +873,76 @@ img {
   fill: #f4f4fd;
 }
 
-/* .check-text::before {
-  content: "";
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-} */
+.subscribe-container {
+  margin-left: 80px;
+  min-width: 453px;
+}
+.subscribe-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.subscrib-form {
+  display: flex;
+  gap: 24px;
+}
+.subscribe-label {
+}
+.subscribe-input {
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  min-width: 264px;
+  background: #2e2f42;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding-left: 16px;
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.subscribe-btn {
+  background: #4d5ae5;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.subscribe-btn:hover {
+  background: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-icon {
+  fill: #ffffff;
+}
