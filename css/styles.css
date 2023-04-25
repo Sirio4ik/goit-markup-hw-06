@@ -701,6 +701,7 @@ img {
   display: block;
   margin-left: auto;
   display: flex;
+  fill: #2e2f42;
 }
 
 .modal-close-btn:hover {
@@ -708,11 +709,9 @@ img {
   transition-property: background, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-btn-vector:hover {
   fill: #ffffff;
 }
+
 .close-btn-vector {
   color: #2e2f42;
   outline: transparent;
@@ -863,7 +862,23 @@ img {
   justify-content: center;
   fill: transparent;
 }
+.privacy-policy-icon {
+  margin-right: 8px;
+}
+.policy-container {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
 
+.policy-text {
+  font-size: 12px;
+  line-height: 1.33;
+  text-decoration-line: underline;
+  color: #4d5ae5;
+  padding-left: 4px;
+}
 .input-check:checked + .check-text span {
   background: #404bbf;
   /* OCEAN */
